@@ -1,0 +1,16 @@
+{
+  "include": ["src", "test"],
+
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ES2020",
+    "moduleResolution": "Node",
+
+    "strict": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "noUncheckedIndexedAccess": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

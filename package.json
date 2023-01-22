@@ -1,0 +1,29 @@
+{
+  "name": "micro-guard",
+  "version": "0.0.0",
+  "author": {
+    "name": "Isaac Graves"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "test": "vitest",
+    "build": "tsc -p tsconfig.types.json && tsc -p tsconfig.cjs.json && tsc -p tsconfig.esm.json"
+  },
+  "devDependencies": {
+    "typescript": "4.9.4",
+    "vite": "4.0.4",
+    "vitest": "0.27.3"
+  }
+}
